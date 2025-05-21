@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+
+}
+
+.navbar {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: #333; 
+  color: white; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
+  z-index: 1000; 
+}
+
+.nav-links {
+  list-style: none; 
+  display: flex; 
+  gap: 15px; 
+  margin: 0; 
+  padding: 0; 
+} 
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+  color: #00bcd4; 
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.auth-buttons a {
+  color: white; 
+  text-decoration: none; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.auth-buttons a:hover {
+  background-color: white; 
+  color: #333;
+}
+  /* Hero Section */
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  /* Gaya untuk Video */
+  .carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  /* Gaya untuk Gambar */
+  .carousel-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  
+  /* Featured Packages */
+  .featured-packages {
+    padding: 40px;
+    text-align: center;
+    font-size: large;
+  }
+  
+  .package-cards {
+    display: flex;
+    grid-template-columns: repeat(8, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* card Styles */ 
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: beige;
+  }
+  
+  /* Popular Destinations */
+  .popular-destinations {
+    background: url("HalUtama1.jpg") no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin : 20px;
+  }
+  
+  .destination-card {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* CTA Section */
+  .cta {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  .rating {
+    margin-top: 10px;
+  }
+  
+  .star {
+    font-size: 20px; /* Size of the stars */
+    cursor: pointer;
+    color: gold;
+  }
+  
+  .star:hover {
+    color: orange; /* Color on hover */
+  }
+  
+  .result {
+    display: flex;
+    margin-top: 5px;
+    font-size: 14px;
+    justify-content: flex-end;
+  }
+  
+  .carii {
+    margin-left: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .discount {
+    font-size: 16px;
+    color: red; /* Color for discount */
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-form button {
+    margin-left: auto;
+  }
+  
+  
+  
+  .arrow-icon {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 10px;
+    animation: bounce 1.5s infinite;
+  }
+  
+  /* Optional bounce effect */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  button a {
+    color: black;
+    text-decoration: none;
+  
+  }
+  
+  /* Gaya untuk bagian layanan */
+  .services {
+    background-color: whitesmoke; 
+    padding: 50px 20px; 
+    text-align: center; 
+  }
+  .logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 50px;
+  }
+  
+  .services h2 {
+    font-size: 4.0em; 
+    margin-bottom: 20px;
+    color: #333; 
+  }
+  
+  .service-cards {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 15px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 250px; 
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .service-card h3 {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+    color: #007BFF; 
+  }
+  
+  .service-card p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.5
+  }
+  
+  
+  /* Gaya untuk bagian testimoni */
+  #testimoni {
+    background-color: #f9f9f9; 
+    padding: 50px 0;
+  }
+  
+  /* Gaya untuk judul testimoni */
+  .testimonials h2 {
+    text-align: center;
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
+    color: #333;
+  }
+  
+  /* Gaya untuk kartu testimoni */
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  /* Gaya untuk setiap kartu testimoni */
+  .testimonial-card {
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    text-align: center; 
+    max-width: 300px;
+  }
+  
+  /* Gaya untuk gambar testimoni */
+  .testimonial-photo {
+    width: 5px; 
+    height: 5px; 
+    border-radius: 5px;
+    margin-bottom: 5px; 
+    border: 3px solid #4CAF50; 
+  }
+  
+  /* Gaya untuk teks testimoni */
+  .testimonial-card p {
+    font-size: 1.1em; 
+    color: #555; 
+    margin: 10px 0; 
+  }
+  
+  /* Gaya untuk nama pelanggan */
+  .testimonial-card h4 {
+    font-size: 1.2em; 
+    color: #4CAF50;
+    margin-top: 10px; 
+  }
+  /* Gaya untuk bagian Blog Terbaru */
+  .Blog {
+    background-color: #f9f9f9; 
+    padding: 50px 20px; 
+    text-align: center; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .Blog h2 {
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
+    color: #333; 
+  }
+  
+  .blog-posts {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  .blog-post {
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin: 15px;
+    width: 300px; 
+    transition: transform 0.3s; 
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .blog-post h3 {
+    font-size: 1.5em; 
+    color: #007BFF;
+    margin-bottom: 10px; 
+  }
+  
+  .blog-post p {
+    font-size: 1em;
+    color: #555; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+  }
+  
+  .blog-post button {
+    background-color: black; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .blog-post button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .blog-post button a {
+    text-decoration: none; 
+    color: white; 
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .package-cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    }
+    
+    @media (max-width: 900px) {
+    .package-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    }
+    
+    @media (max-width: 600px) {
+    .package-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .package-cards {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+    }
+  
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-3 {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 750px;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 24px;
+  }
+  
+  .carousel-caption p {
+    font-size: 18px;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container2 {
+    max-width: 1600px;
+    max-height: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.category-card {
+    background-color: hsla(0, 0%, 60%, 0.427);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.category-card:hover {
+    transform: scale(1.05);
+}
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.category-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+}
+.category-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 15px 15px;
+}
+.statistics {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: hsla(0, 0%, 60%, 0.427);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.statistics h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.statistics table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.statistics table, .statistics th, .statistics td {
+    border: 1px solid #ddd;
+}
+.statistics th, .statistics td {
+    text-align: center;
+    padding: 10px;
+}
+.statistics th {
+    background-color: #333;
+    color: white;
+}
+section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section {
+     margin-top: 20px;
+        padding: 20px;
+        background-color: hsla(0, 0%, 60%, 0.427);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }

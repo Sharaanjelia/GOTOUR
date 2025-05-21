@@ -1,0 +1,91 @@
+/* Navbar Full Kiri ke Kanan */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navbar .logo {
+    margin: 0;
+  }
+
+  .navbar .logo img {
+    height: 50px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #007bff;
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .auth-buttons .login-btn,
+  .auth-buttons .signup-btn {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .auth-buttons .login-btn:hover,
+  .auth-buttons .signup-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .main-content {
+    margin-top: 80px;
+  }
+
+  .chart-title {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .green-bg {
+    background-color: #28a745;
+  }
+
+  .blue-bg {
+    background-color: #007bff;
+  }
+
+  .data-title {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }

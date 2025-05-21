@@ -1,0 +1,34 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image:url(halutama3.jpg) ;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+li {
+    margin-bottom: 20px;
+}
+  
+h2 {
+    color: #666;
+}
+  
+p {
+    line-height: 1.5;
+}
+  
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
